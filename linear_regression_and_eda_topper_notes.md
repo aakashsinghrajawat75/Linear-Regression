@@ -1,8 +1,8 @@
-# 📝 Ultimate Topper's Notes: Exploratory Data Analysis (EDA) & Linear Regression
+#  Ultimate Topper's Notes: Exploratory Data Analysis (EDA) & Linear Regression
 
 ---
 
-## 🌟 Quick Index & Concept Map
+##  Quick Index & Concept Map
 ```mermaid
 graph TD
     A[Raw Dataset] --> B[Phase 1: EDA & Data Prep]
@@ -21,7 +21,7 @@ graph TD
 
 ---
 
-## 🔍 Phase 1: Step-by-Step Exploratory Data Analysis (EDA)
+##  Phase 1: Step-by-Step Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis is the **detective work** of Data Science. Before training any machine learning model, we must understand the structure of the data, detect anomalies, identify patterns, and check relationships.
 
@@ -79,7 +79,7 @@ df = df.drop_duplicates()
 ### Step 4: Univariate Analysis (Individual Variable Distributions)
 Univariate analysis looks at one variable at a time to examine its distribution, spread, skewness, and outliers.
 
-#### 📊 Visualizations:
+####  Visualizations:
 1. **Histograms:** To visualize the frequency distribution.
 2. **Box Plots:** To identify outliers (values outside $1.5 \times \text{IQR}$).
 
@@ -105,7 +105,7 @@ plt.show()
 ### Step 5: Bivariate Analysis (Relationship Between Two Variables)
 Since Linear Regression models the relationship between an independent variable ($X$) and a dependent variable ($Y$), this step is critical.
 
-#### 📈 Visualizations & Calculations:
+####  Visualizations & Calculations:
 1. **Scatter Plot:** To visually inspect if the trend is linear, non-linear, or random.
 2. **Correlation Coefficient ($r$):** Quantifies the strength and direction of the linear relationship (ranges from $-1$ to $+1$).
 
@@ -126,7 +126,7 @@ plt.show()
 
 ---
 
-## 📈 Phase 2: Linear Regression — Concept & Mathematical Deep Dive
+##  Phase 2: Linear Regression — Concept & Mathematical Deep Dive
 
 ### 1. What is Linear Regression?
 Linear Regression is a supervised learning algorithm used to predict a continuous quantitative dependent variable $Y$ based on one or more independent variables $X$.
@@ -149,7 +149,7 @@ Where $\hat{Y}$ (pronounced "Y-hat") is the predicted value.
 
 ---
 
-### 🧮 4. Step-by-Step OLS (Ordinary Least Squares) Derivation
+###  4. Step-by-Step OLS (Ordinary Least Squares) Derivation
 The objective of Linear Regression is to find the best line (the values of $\beta_0$ and $\beta_1$) that minimizes the sum of squared errors between the actual data points and the predicted line.
 
 #### Step A: Define the Cost Function (Residual Sum of Squares - RSS)
@@ -202,7 +202,7 @@ This is the OLS closed-form equation for the slope!
 
 ---
 
-### 🎨 Visualizing Residuals
+###  Visualizing Residuals
 The vertical distance between the actual point and the regression line represents the residual ($e_i$):
 
 ```text
@@ -219,7 +219,7 @@ The vertical distance between the actual point and the regression line represent
 
 ---
 
-## 📋 Phase 3: The 5 Core Assumptions of Linear Regression
+##  Phase 3: The 5 Core Assumptions of Linear Regression
 
 For a linear regression model to yield reliable and unbiased estimators, five conditions must be met:
 
@@ -233,7 +233,7 @@ For a linear regression model to yield reliable and unbiased estimators, five co
 
 ---
 
-## 📊 Phase 4: Model Evaluation Metrics
+##  Phase 4: Model Evaluation Metrics
 
 Once we fit a model, how do we know if it is good? We calculate error metrics:
 
@@ -264,7 +264,7 @@ $$R^2 = 1 - \frac{SS_{residual}}{SS_{total}} = 1 - \frac{\sum (y_i - \hat{y}_i)^
 
 ---
 
-## 💻 Phase 5: Complete End-to-End Implementation
+##  Phase 5: Complete End-to-End Implementation
 
 Here is the clean, robust Python code block to perform EDA, train a Linear Regression model, evaluate its performance, and plot the regression line.
 
